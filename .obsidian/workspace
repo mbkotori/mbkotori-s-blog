@@ -1,0 +1,105 @@
+{
+  "main": {
+    "id": "e060c950e9046f0f",
+    "type": "split",
+    "children": [
+      {
+        "id": "8982a0849b9612c9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "readme.md",
+            "mode": "source",
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "43b195fc49e7a767",
+    "type": "split",
+    "children": [
+      {
+        "id": "bd12ee618efb7714",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5cdc3626d856ed94",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "4992cdeb27e3b353",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8ea10db5ccfd2af2",
+    "type": "split",
+    "children": [
+      {
+        "id": "a46b9073b2ad6303",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d28aa63f13a41f47",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "readme.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f8c506190c1c9691",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "readme.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "8982a0849b9612c9",
+  "lastOpenFiles": [
+    "readme.md",
+    "myself.md"
+  ]
+}

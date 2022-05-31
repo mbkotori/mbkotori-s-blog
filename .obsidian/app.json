@@ -1,0 +1,18 @@
+{
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "2",
+    "downscalePercent": 50
+  },
+  "promptDelete": false,
+  "spellcheck": false,
+  "showLineNumber": true,
+  "fileSortOrder": "byModifiedTimeReverse",
+  "legacyEditor": false,
+  "livePreview": false,
+  "readableLineLength": true,
+  "foldIndent": true,
+  "defaultViewMode": "source"
+}
