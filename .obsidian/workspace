@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "9db0f92277e1be10",
+        "id": "6fa87e67ebb16835",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -98,9 +98,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9db0f92277e1be10",
+  "active": "6fa87e67ebb16835",
   "lastOpenFiles": [
     "学习&分享/全变分（Total variation）在图像去噪算法中的应用.md",
+    "pictures/求解这个其欧拉-拉格朗日方程.png",
     "pictures/TV去噪的图像和原图像计算PSNR和SSIM.png",
     "学习&分享/换了个主题，顺便研究下在md中的latex方法.md",
     "readme.md",
@@ -108,7 +109,6 @@
     "timeline.md",
     "总结/summary.md",
     "总结/2021-1-19.md",
-    "总结/2021-1-18.md",
-    "总结/2021年度总结.md"
+    "总结/2021-1-18.md"
   ]
 }

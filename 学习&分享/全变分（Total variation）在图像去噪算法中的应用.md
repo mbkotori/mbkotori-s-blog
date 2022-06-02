@@ -11,8 +11,7 @@ $$\text{TV}(u) = \iint |\bigtriangledown u|\mathrm{d}x\mathrm{d}y =\iint \sqrt{u
 $$\text{min}\, J(u) = \iint \sqrt{u_x^2+u_y^2}\mathrm{d}x\mathrm{d}y + \frac{\lambda }{2}\iint (u-u_0)^2\mathrm{d}x\mathrm{d}y$$
 
 求解这个其欧拉-拉格朗日方程，可以得到：
-
-$$\begin{aligned}  0 =\lambda(u-u_0)-&\frac{\partial }{\partial x}[u_x(u_x^2+u_y^2)^{-\frac{1}{2}}]-\frac{\partial }{\partial y}[u_y(u_x^2+u_y^2)^{-\frac{1}{2}}]\\  =\lambda(u-u_0)-&\left\{u_{xx}(u_x^2+u_y^2)^{-\frac{1}{2}}-u_x(u_xu_{xx}+u_yu_{yx})(u_x^2+u_y^2)^{-\frac{3}{2}}\right.\\  &\left.+u_{yy}(u_x^2+u_y^2)^{-\frac{1}{2}}-u_y(u_xu_{xy}+u_yu_{yy})(u_x^2+u_y^2)^{-\frac{3}{2}}\right\}\\ =\lambda(u-u_0)-&(u_{xx}u_y^2-2u_xu_xu_{xy}+u_{yy}u_x^2)(u_x^2+u_y^2)^{-\frac{3}{2}}  \end{aligned}$$
+![[求解这个其欧拉-拉格朗日方程.png]]
 
 也可以写成更简便的形式：
 
