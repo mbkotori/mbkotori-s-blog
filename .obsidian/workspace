@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "readme.md",
-            "mode": "source",
+            "file": "学习&分享/全变分（Total variation）在图像去噪算法中的应用.md",
+            "mode": "preview",
             "source": true
           }
         }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 219
+    "width": 356
   },
   "right": {
     "id": "8ea10db5ccfd2af2",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "readme.md",
+                "file": "学习&分享/全变分（Total variation）在图像去噪算法中的应用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "readme.md"
+                "file": "学习&分享/全变分（Total variation）在图像去噪算法中的应用.md"
               }
             }
           }
@@ -100,15 +100,15 @@
   },
   "active": "9db0f92277e1be10",
   "lastOpenFiles": [
+    "学习&分享/全变分（Total variation）在图像去噪算法中的应用.md",
+    "pictures/TV去噪的图像和原图像计算PSNR和SSIM.png",
+    "学习&分享/换了个主题，顺便研究下在md中的latex方法.md",
     "readme.md",
     "关于作者,和这个blog.md",
     "timeline.md",
     "总结/summary.md",
-    "学习&分享/全变分（Total variation）在图像去噪算法中的应用.md",
-    "学习&分享/换了个主题，顺便研究下在md中的latex方法.md",
     "总结/2021-1-19.md",
     "总结/2021-1-18.md",
-    "总结/2021年度总结.md",
-    "总结/2021-1-22.md"
+    "总结/2021年度总结.md"
   ]
 }

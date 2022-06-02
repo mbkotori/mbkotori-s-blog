@@ -1,6 +1,6 @@
 在图像复原过程中，图像上的一点点噪声可能就会对复原的结果产生非常大的影响，因为很多复原算法都会放大噪声。Rudin等人于1992年提出全变分（TV）方法，该方法基于这样一个事实：一个含有噪声的信号相对于其未受噪声影响的信号，它的全变分值要更大,。信号的全变分值被定义为：
 
-$\text{TV}(u) = \iint |\bigtriangledown u|\mathrm{d}x\mathrm{d}y =\iint \sqrt{u_x^2+u_y^2}\mathrm{d}x\mathrm{d}y$
+$$\text{TV}(u) = \iint |\bigtriangledown u|\mathrm{d}x\mathrm{d}y =\iint \sqrt{u_x^2+u_y^2}\mathrm{d}x\mathrm{d}y$$
 
 即其梯度绝对值的总和较大。因此如果能找到一个与原始信号相似且全变分较小的信号，即可作为原始信号的降噪结果。全变分去噪(Total Variation Denoising)于1992年由L.I. Rudin、S. Osher和E. Fatemi提出，因此亦称为ROF模型。该算法的优势是可以在去除噪声的同时保留边缘信息，即使在低信噪比（噪声超过真实信号）的情况下，依然能有效地去噪和保留边缘。
 
@@ -8,33 +8,33 @@ $\text{TV}(u) = \iint |\bigtriangledown u|\mathrm{d}x\mathrm{d}y =\iint \sqrt{u_
 
 对于一张含有噪声的图像，若已知信号具有一定的平滑性（对于很多真实图像是满足的），就可以利用全变分方法进行去噪。使用拉格朗日乘子法：
 
-$\text{min}\, J(u) = \iint \sqrt{u_x^2+u_y^2}\mathrm{d}x\mathrm{d}y + \frac{\lambda }{2}\iint (u-u_0)^2\mathrm{d}x\mathrm{d}y \\$
+$$\text{min}\, J(u) = \iint \sqrt{u_x^2+u_y^2}\mathrm{d}x\mathrm{d}y + \frac{\lambda }{2}\iint (u-u_0)^2\mathrm{d}x\mathrm{d}y$$
 
 求解这个其欧拉-拉格朗日方程，可以得到：
 
-$\begin{aligned}  0 =\lambda(u-u_0)-&\frac{\partial }{\partial x}[u_x(u_x^2+u_y^2)^{-\frac{1}{2}}]-\frac{\partial }{\partial y}[u_y(u_x^2+u_y^2)^{-\frac{1}{2}}]\\  =\lambda(u-u_0)-&\left\{u_{xx}(u_x^2+u_y^2)^{-\frac{1}{2}}-u_x(u_xu_{xx}+u_yu_{yx})(u_x^2+u_y^2)^{-\frac{3}{2}}\right.\\  &\left.+u_{yy}(u_x^2+u_y^2)^{-\frac{1}{2}}-u_y(u_xu_{xy}+u_yu_{yy})(u_x^2+u_y^2)^{-\frac{3}{2}}\right\}\\ =\lambda(u-u_0)-&(u_{xx}u_y^2-2u_xu_xu_{xy}+u_{yy}u_x^2)(u_x^2+u_y^2)^{-\frac{3}{2}}  \end{aligned} \\$
+$$\begin{aligned}  0 =\lambda(u-u_0)-&\frac{\partial }{\partial x}[u_x(u_x^2+u_y^2)^{-\frac{1}{2}}]-\frac{\partial }{\partial y}[u_y(u_x^2+u_y^2)^{-\frac{1}{2}}]\\  =\lambda(u-u_0)-&\left\{u_{xx}(u_x^2+u_y^2)^{-\frac{1}{2}}-u_x(u_xu_{xx}+u_yu_{yx})(u_x^2+u_y^2)^{-\frac{3}{2}}\right.\\  &\left.+u_{yy}(u_x^2+u_y^2)^{-\frac{1}{2}}-u_y(u_xu_{xy}+u_yu_{yy})(u_x^2+u_y^2)^{-\frac{3}{2}}\right\}\\ =\lambda(u-u_0)-&(u_{xx}u_y^2-2u_xu_xu_{xy}+u_{yy}u_x^2)(u_x^2+u_y^2)^{-\frac{3}{2}}  \end{aligned}$$
 
 也可以写成更简便的形式：
 
--\nabla\frac{\nabla u}{|\nabla u|}+\lambda(u-u_0) = 0\\
+$$-\nabla\frac{\nabla u}{|\nabla u|}+\lambda(u-u_0) = 0$$
 
 利用梯度下降法进行迭代，有限差分求近似解：
 
-$u_(i,j)^{(n+1)}=u_(i,j)^n-Δtλ^n (u_(i,j)^n-u_0 (i,j))+Δt(▽⋅((▽u_(i,j)^n)/(|▽u_(i,j)^n |)))$
+$$u_(i,j)^{(n+1)}=u_(i,j)^n-Δtλ^n (u_(i,j)^n-u_0 (i,j))+Δt(▽⋅((▽u_(i,j)^n)/(|▽u_(i,j)^n |)))$$
 
 使用matlab验证该方法，先对原始图像添加高斯噪声，之后使用全变分方法去噪，并计算PSNR（峰值信噪比）和SSIM（结构相似度）来说明去噪的效果。
 
-![](file://D:/我的坚果云/mbkotori_blog/post-images/1641951090921.png)
+![[原图，噪声图像，全变分去噪结果展示.png]]
 图1.原图，噪声图像，全变分去噪结果展示
 
-![](file://D:/我的坚果云/mbkotori_blog/post-images/1641951098102.png)
+![[TV去噪的图像和原图像计算PSNR和SSIM.png]]
 图2.TV去噪的图像和原图像计算PSNR和SSIM
 
 可以看出，TV去噪效果是比较好的，在保留细节同时有效祛除了噪声。缺点是会使得复原的图像过于光滑，对于细节较多的图像来说会使复原后的图像丢失细节。
 
 全变分的另一种应用是作为正则项，作为正则项时常在图像复原，图像去噪中应用，作用就是保持图像的光滑性，消除图像复原可能带来的伪影。缺陷在于会使得复原的图像过于光滑，在一些细节比较多的图像中会使得复原后的图像丢失细节。
 
-![](file://D:/我的坚果云/mbkotori_blog/post-images/1641951106503.jpg)
+![[加了TV正则项以后的图像复原结果和不加的差异.jpg]]
 图3 加了TV正则项以后的图像复原结果和不加的差异，图(a)是原始图像，图(b)在原图像上加了一定程度的模糊和噪声，图(c)是不加TV项的复原结果，可以看到有一圈一圈的伪影，这是我们不想要的。图(d)是加了TV项以后的复原结果，没有伪影，复原结果基本和原图像相同。
 
 参 考 文 献
