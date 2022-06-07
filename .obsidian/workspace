@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "6fa87e67ebb16835",
+        "id": "446c380ebe3fbf5b",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "学习&分享/全变分（Total variation）在图像去噪算法中的应用.md",
-            "mode": "preview",
+            "file": "timeline.md",
+            "mode": "source",
             "source": true
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "学习&分享/全变分（Total variation）在图像去噪算法中的应用.md",
+                "file": "timeline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "学习&分享/全变分（Total variation）在图像去噪算法中的应用.md"
+                "file": "timeline.md"
               }
             }
           }
@@ -95,20 +95,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "6fa87e67ebb16835",
+  "active": "446c380ebe3fbf5b",
   "lastOpenFiles": [
-    "学习&分享/全变分（Total variation）在图像去噪算法中的应用.md",
-    "pictures/求解这个其欧拉-拉格朗日方程.png",
-    "pictures/TV去噪的图像和原图像计算PSNR和SSIM.png",
-    "学习&分享/换了个主题，顺便研究下在md中的latex方法.md",
-    "readme.md",
-    "关于作者,和这个blog.md",
     "timeline.md",
+    "readme.md",
     "总结/summary.md",
+    "总结/2021-1-22.md",
+    "总结/2021-1-20.md",
+    "总结/2021-1-21.md",
+    "总结/2021-所有日记归档整理.md",
     "总结/2021-1-19.md",
-    "总结/2021-1-18.md"
+    "总结/2021-1-18.md",
+    "总结/2021-1-16.md"
   ]
 }

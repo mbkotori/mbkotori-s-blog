@@ -14,5 +14,6 @@
   "livePreview": false,
   "readableLineLength": true,
   "foldIndent": true,
-  "defaultViewMode": "source"
+  "defaultViewMode": "source",
+  "attachmentFolderPath": "pictures"
 }
