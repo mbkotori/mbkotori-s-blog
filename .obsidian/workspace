@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "我玩过的游戏/PC游戏/艾尔登法环.md",
+            "file": "我玩过的游戏/我玩过的游戏们.md",
             "mode": "source",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "我玩过的游戏/PC游戏/艾尔登法环.md",
+                "file": "我玩过的游戏/我玩过的游戏们.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,7 +86,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "我玩过的游戏/PC游戏/艾尔登法环.md"
+                "file": "我玩过的游戏/我玩过的游戏们.md"
               }
             }
           }
@@ -99,15 +99,15 @@
   },
   "active": "446c380ebe3fbf5b",
   "lastOpenFiles": [
+    "我玩过的游戏/我玩过的游戏们.md",
+    "我玩过的游戏/旧时代主机/旧时代主机.md",
+    "我玩过的游戏/移动端游戏/移动端游戏.md",
+    "我玩过的游戏/NS游戏/NS游戏.md",
+    "我玩过的游戏/PC游戏/PC游戏.md",
     "我玩过的游戏/PC游戏/艾尔登法环.md",
     "我玩过的游戏/NS游戏/怪物猎人：崛起.md",
     "timeline.md",
     "readme.md",
-    "总结/summary.md",
-    "总结/2021-1-22.md",
-    "总结/2021-1-20.md",
-    "总结/2021-1-21.md",
-    "总结/2021-所有日记归档整理.md",
-    "总结/2021-1-19.md"
+    "总结/summary.md"
   ]
 }
